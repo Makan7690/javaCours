@@ -9,7 +9,7 @@ package tp;
  *
  * @author Makan
  */
-public abstract class FigureGeometrique {
+public abstract class FigureGeometrique {//Une classe abstract est une clase qui peut contenir de methode abstract
     Double pi = 3.14;
     public FigureGeometrique() {
     }

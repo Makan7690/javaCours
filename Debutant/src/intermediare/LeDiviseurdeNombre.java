@@ -41,9 +41,9 @@ public class LeDiviseurdeNombre {
     public static boolean estDivisible(int n1, int n2) {
         if(n1%n2==0){
          return true;   
-        }else{
+        }else
             return false;
-        }
+        
         
     }
         

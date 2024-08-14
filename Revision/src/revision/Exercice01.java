@@ -4,6 +4,8 @@
  */
 package revision;
 
+import java.time.Clock;
+
 /**
  *
  * @author Makan
@@ -40,5 +42,7 @@ public class Exercice01 {
            System.out.println();
         }
 // Un tableau dynamique: ArrayList<String>,ArrayList<Integer>,ArrayList<Double>...
+        Clock clock = Clock.systemUTC();
+        System.out.println("UTC TIME "+clock.withZone(Bamako));
     }
 }

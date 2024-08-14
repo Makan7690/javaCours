@@ -46,11 +46,11 @@ public class Personne {
                 + "Votre age est: "+this.getAge();
         return mk;
     }
-   public int additionner(int a, int b){
+   public int additionner(int a, int b){ // Surcharge de methode. 
        int somme = a + b;
        return somme;
    }
-   public int additionner(int a, int b, int c){
+   public int additionner(int a, int b, int c){  // Surcharge de methode.
        int somme = a + b + c;
        return somme;
    }

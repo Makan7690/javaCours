@@ -14,5 +14,6 @@ import intermediare.objet.Personne;
 public class TestHoommeFemme {
     public static void main(String[] args) {
         Homme h1 = new Homme("Fanta", "Toure", 45);
+        System.out.println(h1);
     }
 }

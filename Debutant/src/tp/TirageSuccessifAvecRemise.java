@@ -6,6 +6,7 @@
 package tp;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Scanner;
 
 /**
  *
@@ -23,7 +24,7 @@ public class TirageSuccessifAvecRemise {
         while (hs.size() != dn.pu(n, p)){
             // Un tirage a faire
             for (int i = 1; i <= p; i++) {
-              int index = (int)(l*Math.random());// generer un nombre (index alea) entre 0 et l (ligne 21)
+              int index = (int)(n*Math.random());// generer un nombre (index alea) entre 0 et l (ligne 21)
               s = s+tab[index];// acces a l'index aleatoire
             }
             hs.add(s);// Ajout du tirage obtebu, dans Enseble des tirages possibles
@@ -40,5 +41,12 @@ public class TirageSuccessifAvecRemise {
               System.out.println(c+" "+e);
               c++;
         }
+          Scanner clavier = new Scanner(System.in);
+          int ak , bk;
+          System.out.println("Enter un nombre au choix. ");
+          int a = clavier.nextInt();
+          System.out.println("Enter un nombre au choix. ");
+          int b = clavier.nextInt();
+         System.out.println("La somme de "+a+"+"+b+" = "+(a+b)); 
     }
 }

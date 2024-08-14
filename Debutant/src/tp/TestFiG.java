@@ -25,7 +25,7 @@ public class TestFiG {
         FigureGeometrique f1 = new Rectangle(4.,6.);
         FigureGeometrique f2 = new Cercle(13.);
         System.out.println(f1);
-        System.out.println(f2);
+        System.out.println(f2.perimetre());
         
     }
 }

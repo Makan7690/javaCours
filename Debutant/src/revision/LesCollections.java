@@ -40,7 +40,7 @@ public class LesCollections {
 //         hs.add(20);
 //         System.out.println(hs);
          int n = 5;
-         int a = (int) (n*Math.random());// generer un nombre aleatoire entre 0 et (n-1)
+         int a = (int) (n*Math.random());// generer un nombre aleatoire entre 0 et (n-1) avec n = 5.
 //         System.out.println(a);
          
          int taille = Ma.size();//Taille de la liste
@@ -68,32 +68,41 @@ public class LesCollections {
          listePersonnes.add(new Personne("Fatim", "Sangare", 56)); 
          listePersonnes.add(new Personne("Victor", "Salam", 17)); 
          listePersonnes.add(new Personne("Mahamadou", "Haidara", 65)); 
-         listePersonnes.add(new Personne("Dielika", "Kouyate", 27)); 
+         listePersonnes.add(new Personne("Dielika", "Kouyate", 27));    
          
-//         for (int i = 0; i < listePersonnes.size(); i++) {
-//            String exp = "Personne "+(i+1)+" : ";
-//            String pren = ((Personne)listePersonnes.get(i)).getPrenom();
-//            String nom = ((Personne)listePersonnes.get(i)).getNom();
-//            int age = ((Personne)listePersonnes.get(i)).getAge();
-//            String rep = exp+" "+pren+" "+nom+" "+age+" an (s)";
+                 
+         
 //         
-//            System.out.println(rep);
-//        }
+//         String er =((Personne)listePersonnes.get(5)).getPrenom();
+//         String xr =((Personne)listePersonnes.get(5)).getNom();
+//         int tr =((Personne)listePersonnes.get(5)).getAge();
+//         String as = "Personne1:"+ er+" " + xr+" "+ tr+"ans";
+//         System.out.println(as);
          
-         List<String> l1 = new ArrayList<>();
+         for (int i = 0; i < listePersonnes.size(); i++) { // c'est le nombre de taille
+            String exp = "Personne "+(i+1)+" : ";//nombre d'iteration
+            String pren = ((Personne)listePersonnes.get(i)).getPrenom();// index de prenom.
+            String nom = ((Personne)listePersonnes.get(i)).getNom();// index de nom.
+            int age = ((Personne)listePersonnes.get(i)).getAge();// index de l'age.
+            String rep = exp+" "+pren+" "+nom+" "+age+" an (s)";// la conatination de variables.
          
-         l1.add("11110010");
-         l1.add("10010010");
-         l1.add("10110010");
+            System.out.println(rep);
+       }
+         
+//         List<String> l1 = new ArrayList<>();
+//         
+//         l1.add("11110010");
+//         l1.add("10010010");
+//         l1.add("10110010");
          
 //        for(String rt:l1){
 //            System.out.println(rt);
 //        }
         
-        Iterator it = l1.iterator();
-        while (it.hasNext()) {
-            System.out.println(it.next());
-        }
+//        Iterator it = l1.iterator();
+//        while (it.hasNext()) {
+//            System.out.println(it.next());
+//        }
     }
     
-}
+         }

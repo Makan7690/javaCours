@@ -32,6 +32,6 @@ public class SommeTableau {
         }
 //        L'affichage
           System.out.println("La somme des nombres est : "+sommeDesElements);
-          System.out.println("La multipliction des nombres est : "+multiplication);
+          System.out.println("Le produit des nombres est : "+multiplication);
     }
 }

@@ -27,7 +27,7 @@ public class LesTableaux {
         }
         System.out.println("*******************");
         for(int index=0;index<t.length;index+=1){
-            System.out.println(2+t[index]);
+            System.out.println(2+t[index]);// On ajoute +2 a chaque element.
         }
         
         System.out.println("**********"); 

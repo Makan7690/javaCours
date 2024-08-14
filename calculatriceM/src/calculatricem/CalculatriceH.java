@@ -65,6 +65,11 @@ public class CalculatriceH extends javax.swing.JFrame {
 
         jtxtResult.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jtxtResult.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        jtxtResult.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtxtResultActionPerformed(evt);
+            }
+        });
         jPanel1.add(jtxtResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 0, 322, 66));
 
         jButt2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -96,6 +101,11 @@ public class CalculatriceH extends javax.swing.JFrame {
 
         jButt3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButt3.setText("c");
+        jButt3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButt3MouseClicked(evt);
+            }
+        });
         jButt3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButt3ActionPerformed(evt);
@@ -381,6 +391,14 @@ public class CalculatriceH extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButt19ActionPerformed
 
+    private void jtxtResultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtResultActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtxtResultActionPerformed
+
+    private void jButt3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButt3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButt3MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -411,7 +429,10 @@ public class CalculatriceH extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CalculatriceH().setVisible(true);
+                CalculatriceH ty = new CalculatriceH();
+                ty.setVisible(true);
+                ty.setTitle("Calculatrice");
+                ty.setLocationRelativeTo(null);
             }
         });
     }

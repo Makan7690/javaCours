@@ -24,6 +24,7 @@ public class Test {
        Personne rt = new Personne("Karim", "Toure", 34);
         Personne rt1 = new Personne("Makan", "Magassa", 67);
          System.out.println(rt1);
+         System.out.println(rt);
     }
  
 }
